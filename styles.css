@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Dark-Blue: hsl(209, 23%, 22%);
+  --Very-Dark-Blue: hsl(207, 26%, 17%);
+  --Very-Dark-Blue: hsl(200, 15%, 8%);
+  --Dark-Gray: hsl(0, 0%, 52%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: var(--Very-Dark-Blue);
+}
+
+.container-fluid {
+  background-color: var(--Very-Light-Gray);
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+#search {
+  border-left: none;
+}
+
+/* .fa-chevron-down {
+  padding-left: 3em;
+} */
+
+.mode-toggle {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode {
+  background-image: var(--Very-Dark-Blue);
+}
