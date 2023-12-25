@@ -10,7 +10,8 @@ async function fetching() {
 
 function createCard(data) {
   const newCard = document.createElement("div");
-  newCard.className = "card mb-5 pb-4";
+  newCard.className = "card  my-4 my-lg-5  pb-5 px-0";
+  newCard.style.width = "18rem";
 
   newCard.innerHTML = `
             <img src="${data.flags.png}" class="card-img-top" />
@@ -80,25 +81,25 @@ function search(e) {
 }
 
 // mode switcher
-const mode = document.querySelector(".mode");
+// const mode = document.querySelector(".mode");
 
-mode.addEventListener("click", switcher);
+// mode.addEventListener("click", switcher);
 
-function switcher() {
-  const newTheme = document.documentElement.getAttribute("data-bs-theme");
-  const theme = newTheme === "dark" ? "light" : "dark";
+// function switcher() {
+//   const newTheme = document.documentElement.getAttribute("data-bs-theme");
+//   const theme = newTheme === "dark" ? "light" : "dark";
 
-  document.documentElement.setAttribute("data-bs-theme", theme);
-  if (theme === "dark") {
-    const container = document.getElementsByClassName("container-fluid");
-    container[0].style.backgroundColor = "hsl(207, 26%, 17%)";
-    document.body.style.color = "white";
-    const head = document.getElementsByClassName("d-flex");
-    head[0].style.backgroundColor = "hsl(209, 23%, 22%)";
+//   document.documentElement.setAttribute("data-bs-theme", theme);
+//   if (theme === "dark") {
+//     const container = document.getElementsByClassName("container-fluid");
+//     container[0].style.backgroundColor = "hsl(207, 26%, 17%)";
+//     document.body.style.color = "white";
+//     const head = document.getElementsByClassName("d-flex");
+//     head[0].style.backgroundColor = "hsl(209, 23%, 22%)";
 
-    const btn = document.querySelectorAll(".btn");
-    btn[0].style.backgroundColor = "hsl(209, 23%, 22%)";
-    btn[1].style.backgroundColor = "hsl(209, 23%, 22%)";
-    console.log(btn);
-  }
-}
+//     const btn = document.querySelectorAll(".btn");
+//     btn[0].style.backgroundColor = "hsl(209, 23%, 22%)";
+//     btn[1].style.backgroundColor = "hsl(209, 23%, 22%)";
+//     console.log(btn);
+//   }
+// }
