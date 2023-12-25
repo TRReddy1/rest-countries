@@ -56,6 +56,11 @@ body {
   box-shadow: 0em 0em 0.4em rgb(182, 179, 179);
 }
 
+img {
+  width: 290px;
+  height: 150px;
+}
+
 @media (min-width: 1010px) {
   .search-bar {
     width: 30%;
